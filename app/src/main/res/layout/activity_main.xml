@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.userprofile.MainActivity">
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="profile picture"
+        android:src="@drawable/avatar"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lilee"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/profile_picture"
+        />
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="March 20th"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/name"
+        />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="France"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/birthday"
+        />
+</RelativeLayout>
